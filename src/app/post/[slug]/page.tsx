@@ -10,7 +10,7 @@ export default async function Page({
     <main>
       <Header />
       <section className="w-full flex justify-center items-center">
-        {data.id ? (
+        {data !== undefined && data.id ? (
           <Post
             tag={data.tag}
             alt={data.coverImage.altText}
