@@ -13,6 +13,7 @@ jobs:
   Tests:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Using Node.js
         uses: actions/setup-node@v2
         with:
@@ -27,7 +28,6 @@ jobs:
     needs: [Tests]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
