@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "vitest"
+    "test": "vitest",
+    "vercel-build": "npm run prepare && next build"
   },
   "dependencies": {
     "@graphcms/rich-text-react-renderer": "^0.6.2",
